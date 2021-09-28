@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="D:\itec_hw3\itec_hw3\css\Style.css">
+	<link rel="icon" href="bug-solid.svg" type="image/x-icon">
+    <title>Calculation Form</title>
+  </head>
+  
+  <body>
+	<h2>--Math computation Form--</h2>
+	<div class="accordionArray">	  
+		<button class="accordion" onclick="accordions()">Force</button>
+		<div class="accordion-content">
+			<h3>Mass</h3> 
+			<input class="ipt" type="number" id="mass">
+			
+			<h3>Acceleration</h3><input class="ipt" type="number" id="accel">
+			<br><br>
+			<button id="btn" type="button" onclick="computeForce()">Calculate</button>
+			<br>
+			<h4>Net Force: </h4><h4 id="forceTotal">0</h4>
+		</div>
+
+		<button class="accordion">Displacement</button>
+		<div class="accordion-content">
+			<h3>Inital Velocity</h3>
+			<input class="ipt" type="number" id="initalVelo"><br>
+
+			<h3>Time (seconds)</h3>
+			<input class="ipt" type="number" id="time"><br>
+
+			<h3>Acceleration</h3>
+			<input class="ipt" type="number" id="accel"><br>
+			<br><br>
+			<button id="btn" type="button" onclick="computeAvgVelocity()">Calculate</button>
+			<br><br>
+			<h4>Displacement: </h4><h4 id="displaceTotal">0</h4>
+
+		</div>
+
+		<button class="accordion">Quadradic Equation</button>
+		<div class="accordion-content">
+			<h3>Num A</h3>
+			<input class="ipt" type="number" id="sideA"><br>
+			<h3>Num B</h3>
+			<input class="ipt" type="number" id="sideB"><br>
+			<h3>Num C</h3>
+			<input class="ipt" type="number" id="sideC">
+			<br><br>
+			<button id="btn" type="button" onclick="computeQuad()">Calculate</button>
+			<br><br>
+			<h4>Positive side: </h3><p id="posSide">0</p>
+			<br>
+			<h4>Negative side: </h4><p id="negSide">0</p>
+
+		</div>
+
+		<button class="accordion">Finance Equation</button>
+		<div class="accordion-content">
+
+			<h3>PMT</h3>
+			<input class="ipt" type="number" id="PMT"><br>
+
+			<h3>Discount Rate</h3>
+			<input class="ipt" type="number" id="interestRate"><br>
+
+			<h3>Payment periods will be made</h3>
+			<input class="ipt" type="number" id="n">
+			<br>
+			<br><button id="btn" type="button" onclick="computePrinciple()">Calculate</button>
+			
+			<h4>Total:</h4>
+			<br><p id="p">0</p>
+
+		</div>
+
+		<footer>Created by Fransisco Yanes 2021</footer>
+	</div>
+	<script src="D:\itec_hw3\itec_hw3\js\script.js" type="text/javascript"> </script>
+  </body>
+  </html>
